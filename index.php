@@ -554,6 +554,7 @@
         <p>
         <?
          session_start();
+         echo $_SESSION['filename'];
         if(isset($_SESSION['filename'])) {
             echo $_SESSION['filename'];
             }
