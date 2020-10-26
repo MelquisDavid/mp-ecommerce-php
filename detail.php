@@ -181,7 +181,7 @@ $preference->save();
                                             </h3>
                                         </div>
                                         <h3 >
-                                        <?php echo $link.str_replace('.','',$_POST['img']) ?>
+                                        <?php echo $link.substr($_POST['img'],1) ?>
                                             <?php echo $_POST['price'] ?>
                                         </h3>
                                         <h3 >
