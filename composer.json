@@ -1,4 +1,6 @@
 {
+    "name": "melquisd/mp-ecommerce-php",
+    "type": "project",
     "require": {
         "mercadopago/dx-php": "^2.1"
     }
