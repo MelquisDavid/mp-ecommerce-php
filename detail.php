@@ -36,7 +36,7 @@ $item = new MercadoPago\Item();
 $item->id = "1234";
 $item->title = $_POST['title'];
 $item->quantity =  $_POST['unit'];
-$item->picture_url = $_POST['img'];
+$item->picture_url = $_SERVER['HTTP_HOST']. str_replace('.','',$_POST['img']);
 $item->unit_price = $_POST['price'];
 $item->description = "Dispositivo móvil de Tienda e-commerce";
 $preference->payment_methods = array(
@@ -178,7 +178,7 @@ $preference->save();
                                             </h3>
                                         </div>
                                         <h3 >
-                                        <?php echo $_SERVER['HTTP_HOST'] ?>
+                                        <?php echo $_SERVER['HTTP_HOST']. str_replace('.','',$_POST['img']) ?>
                                             <?php echo $_POST['price'] ?>
                                         </h3>
                                         <h3 >
