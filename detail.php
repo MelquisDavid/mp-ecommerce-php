@@ -14,6 +14,15 @@ $item->title = $_POST['title'];
 $item->quantity =  $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $item->description = "Dispositivo móvil de Tienda e-commerce";
+$preference->payment_methods = array(
+    "excluded_payment_methods" => array(
+      array("id" => "amex")
+    ),
+    "excluded_payment_types" => array(
+      array("id" => "atm")
+    ),
+    "installments" => 6
+  );
 $preference->items = array($item);
 
 $preference->save();
@@ -151,7 +160,7 @@ $preference->save();
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <a class="mercadopago-button" href="<?php echo $preference->init_point; ?>">Pagar la Compra</a>
+                                    <a  href="<?php echo $preference->init_point; ?>">Pagar la Compra</a>
                                 </div>
                             </div>
                         </div>
