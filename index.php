@@ -557,7 +557,7 @@
             echo $_SESSION['filename'];
             }
             else{
-                echo isset($_SESSION['filename']);
+                echo "isset";
             }
             ?>
 </p>
