@@ -555,7 +555,7 @@
         <?
          session_start();
          echo $_SESSION['filename'];
-         var_dump($_SESSION['filename']);
+         var_dump(session_id());
          die();
         if(isset($_SESSION['filename'])) {
             echo $_SESSION['filename'];
