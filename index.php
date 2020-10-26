@@ -550,6 +550,15 @@
                 </div>
             </div>
         </div>
+        <div>
+        <p>
+        <?
+        if(!isset($_SESSION['filename'])) {
+            echo $_SESSION['filename']
+            }
+            ?>
+</p>
+        </div>
         <div role="alert" class="as-loader-text ally" aria-live="assertive"></div>
         <div class="as-footnotes ">
             <div class="as-footnotes-content">
