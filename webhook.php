@@ -1,6 +1,6 @@
 <?php
 
-$fp = fopen("/app/webhook.txt",'ab');
+$fp = fopen("/app/webhooka.txt",'ab');
 if (false === $fp) {
     throw new RuntimeException('Unable to open log file for writing');
 }
