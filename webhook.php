@@ -1,6 +1,6 @@
 <?php
 
-$fp = fopen("/webhook.txt",'w+');
+$fp = fopen("/app/webhook.txt",'w+');
 fwrite($fp,"Hola");
 fclose($fp);
 echo json_encode(file_exists("/app/webhook.txt"));
