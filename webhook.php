@@ -1,5 +1,5 @@
 <?php
 
-http_response_code(404);
-
+http_response_code(201);
+echo $_POST
 ?>
