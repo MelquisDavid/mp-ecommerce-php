@@ -74,7 +74,7 @@
                         <div class="as-searchnav-placeholder" style="height: 77px;">
                             <div class="row as-search-navbar" id="as-search-navbar" style="width: auto;">
                                 <div class="as-accessories-filter-tile column large-6 small-3">
-                                <form action="/index.php" method="get">
+                                <form action="/" method="get">
                                     <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="submit">
                                         <h2 class=" as-filter-button-text">
                                             Smartphones
@@ -99,7 +99,7 @@
             <p>Estado : <? echo $_GET['status']?></p>
             <p>Referencia Externa: <? echo $_GET['external_reference']?></p>
             <p>Orden:<? echo $_GET['merchant_order_id']?></p>
-            <form action="/index.php" method="get">
+            <form action="/" method="get">
             <button type="submit" class="mercadopago-button" formmethod="post">Inicio</button>
             </form>
         </div>
