@@ -93,11 +93,15 @@
                 </div>
             </div>
         </div>
-        <div>
-            <p><? echo $_GET['payment_id']?></p>
-            <p><? echo $_GET['status']?></p>
-            <p><? echo $_GET['external_reference']?></p>
-            <p><? echo $_GET['merchant_order_id']?></p>
+        <div style="text-align: center">
+        <h3 >No pudimos procesar tu Pago!</h3>
+            <p>Id de Pago : <? echo $_GET['payment_id']?></p>
+            <p>Estado : <? echo $_GET['status']?></p>
+            <p>Referencia Externa: <? echo $_GET['external_reference']?></p>
+            <p>Orden:<? echo $_GET['merchant_order_id']?></p>
+            <form action="/index.php" method="get">
+            <button type="submit" class="mercadopago-button" formmethod="post">Inicio</button>
+            </form>
         </div>
         <div role="alert" class="as-loader-text ally" aria-live="assertive"></div>
         <div class="as-footnotes ">
