@@ -44,8 +44,8 @@ $preference->payment_methods = array(
   );
 $preference->items = array($item);
 $preference->external_reference = "melquisferrer@gmail.com";
-//$preference->payer = $payer;
-$preference->auto_return = "approved";
+$preference->payer = $payer;
+//$preference->auto_return = "approved";
 $preference->save();
 ?>
 
