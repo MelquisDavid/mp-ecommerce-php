@@ -13,7 +13,9 @@ $item = new MercadoPago\Item();
 $item->title = $_POST['title'];
 $item->quantity =  $_POST['unit'];
 $item->unit_price = $_POST['price'];
+$item->description = "Dispositivo móvil de Tienda e-commerce";
 $preference->items = array($item);
+
 $preference->save();
 ?>
 
@@ -149,10 +151,9 @@ $preference->save();
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    
+                                    <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
                                     <script
-                                    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                                    data-preference-id="<?php echo $preference->id; ?>">
+                                    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js">
                                     </script>
                                 </div>
                             </div>
