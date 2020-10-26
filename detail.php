@@ -57,6 +57,7 @@ $preference->back_urls = array(
 $preference->auto_return = "approved";
 $preference->external_reference = "melquisferrer@gmail.com";
 $preference->payer = $payer;
+$preference->notification_url = "https://melquisd-mp-commerce-php.herokuapp.com/webhook.php";
 $preference->save();
 ?>
 
