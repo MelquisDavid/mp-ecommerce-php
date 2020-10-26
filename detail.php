@@ -2,8 +2,7 @@
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
-$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
-"https" : "http") . "://" . $_SERVER['HTTP_HOST']; 
+$link = "https://".$_SERVER['HTTP_HOST']; 
 
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398');
@@ -39,7 +38,7 @@ $item = new MercadoPago\Item();
 $item->id = "1234";
 $item->title = $_POST['title'];
 $item->quantity =  $_POST['unit'];
-$item->picture_url = $link. str_replace('.','',$_POST['img']);
+$item->picture_url = $link.substr($_POST['img'],1);
 $item->unit_price = $_POST['price'];
 $item->description = "Dispositivo móvil de Tienda e-commerce";
 $preference->payment_methods = array(
@@ -181,8 +180,7 @@ $preference->save();
                                             </h3>
                                         </div>
                                         <h3 >
-                                        <?php echo $link.substr($_POST['img'],1);echo isset($_SERVER['HTTPS']);
-echo $_SERVER['HTTPS']; ?>
+                                
                                             <?php echo $_POST['price'] ?>
                                         </h3>
                                         <h3 >
