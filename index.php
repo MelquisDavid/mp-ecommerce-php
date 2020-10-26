@@ -553,7 +553,7 @@
         <div>
         <p>
         <?
-        if(!isset($_SESSION['filename'])) {
+        if(isset($_SESSION['filename'])) {
             echo $_SESSION['filename'];
             }
             ?>
