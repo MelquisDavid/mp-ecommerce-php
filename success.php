@@ -94,7 +94,7 @@
             </div>
         </div>
         <div style="text-align: center">
-        <h3 >No pudimos procesar tu Pago!</h3>
+        <h3 >Procesamos tu Pago!</h3>
             <p>Id de Pago : <? echo $_GET['payment_id']?></p>
             <p>Estado : <? echo $_GET['status']?></p>
             <p>Referencia Externa: <? echo $_GET['external_reference']?></p>
