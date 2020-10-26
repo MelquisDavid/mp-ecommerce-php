@@ -94,10 +94,10 @@
             </div>
         </div>
         <div>
-            <p><? echo $_POST['payment_id']?></p>
-            <p><? echo $_POST['status']?></p>
-            <p><? echo $_POST['external_reference']?></p>
-            <p><? echo $_POST['merchant_order_id']?></p>
+            <p><? echo $_GET['payment_id']?></p>
+            <p><? echo $_GET['status']?></p>
+            <p><? echo $_GET['external_reference']?></p>
+            <p><? echo $_GET['merchant_order_id']?></p>
         </div>
         <div role="alert" class="as-loader-text ally" aria-live="assertive"></div>
         <div class="as-footnotes ">
