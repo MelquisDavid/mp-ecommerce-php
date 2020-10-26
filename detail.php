@@ -21,6 +21,7 @@ $payer->phone = array(
   "number" => "22223333"
 );
 $payer->address = array(
+  "street_name" => False,
   "street_number" => 123,
   "zip_code" => "1111"
 );
@@ -43,9 +44,14 @@ $preference->payment_methods = array(
     "installments" => 6
   );
 $preference->items = array($item);
+$preference->back_urls = array(
+    "success" => "https://melquisd-mp-commerce-php.herokuapp.com/success.php",
+    "failure" => "https://melquisd-mp-commerce-php.herokuapp.com/failure.php",
+    "pending" => "https://melquisd-mp-commerce-php.herokuapp.com/pending.php"
+);
+$preference->auto_return = "approved";
 $preference->external_reference = "melquisferrer@gmail.com";
 $preference->payer = $payer;
-//$preference->auto_return = "approved";
 $preference->save();
 ?>
 
