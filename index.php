@@ -556,6 +556,9 @@
         if(isset($_SESSION['filename'])) {
             echo $_SESSION['filename'];
             }
+            else{
+                echo isset($_SESSION['filename']);
+            }
             ?>
 </p>
         </div>
