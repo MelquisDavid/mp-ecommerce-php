@@ -10,7 +10,7 @@ session_start();
 header('Content-Type: application/json');
 $request = file_get_contents('php://input');
 $req_dump = print_r( $request, true );
-$_SESSION['filename'] = $req_dump;
+$_SESSION['filename'] = $_POST["id"];
 http_response_code(200);
 
 ?>
