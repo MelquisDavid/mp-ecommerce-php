@@ -73,7 +73,16 @@
                         </div>
                         <div class="as-searchnav-placeholder" style="height: 77px;">
                             <div class="row as-search-navbar" id="as-search-navbar" style="width: auto;">
-      
+                                <div class="as-accessories-filter-tile column large-6 small-3">
+                                <form action="/index.php" method="get">
+                                    <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="submit">
+                                        <h2 class=" as-filter-button-text">
+                                            Smartphones
+                                        </h2>
+                                    </button>
+                                    </form>
+
+                                </div>
 
                             </div>
                         </div>
@@ -83,6 +92,12 @@
 
                 </div>
             </div>
+        </div>
+        <div>
+            <p><? echo $_POST['payment_id']?></p>
+            <p><? echo $_POST['status']?></p>
+            <p><? echo $_POST['external_reference']?></p>
+            <p><? echo $_POST['merchant_order_id']?></p>
         </div>
         <div role="alert" class="as-loader-text ally" aria-live="assertive"></div>
         <div class="as-footnotes ">

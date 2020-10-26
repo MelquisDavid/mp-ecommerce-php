@@ -84,6 +84,12 @@
                 </div>
             </div>
         </div>
+        <div>
+            <p><? echo $_POST['payment_id']?></p>
+            <p><? echo $_POST['status']?></p>
+            <p><? echo $_POST['external_reference']?></p>
+            <p><? echo $_POST['merchant_order_id']?></p>
+        </div>
         <div role="alert" class="as-loader-text ally" aria-live="assertive"></div>
         <div class="as-footnotes ">
             <div class="as-footnotes-content">
