@@ -16,19 +16,11 @@ $payer = new MercadoPago\Payer();
 $payer->name = "Lalo";
 $payer->surname = "Landa";
 $payer->email = "test_user_63274575@testuser.com";
-$payer->date_created = "2018-06-02T12:58:41.425-04:00";
 $payer->phone = array(
   "area_code" => "11",
   "number" => "22223333"
 );
-
-$payer->identification = array(
-  "type" => "DNI",
-  "number" => "12345678"
-);
-
 $payer->address = array(
-  "street_name" => False,
   "street_number" => 123,
   "zip_code" => "1111"
 );
