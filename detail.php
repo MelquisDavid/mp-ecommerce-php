@@ -1,6 +1,8 @@
 <?php
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
+
+session_start();
 MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
 $link = "https://".$_SERVER['HTTP_HOST']; 
