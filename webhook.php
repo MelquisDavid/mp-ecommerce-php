@@ -1,5 +1,5 @@
 <?php
-if(!session_id()) session_start();
+session_start();
 $filename = "test";
 $_SESSION['filename'] = json_encode($_POST);
 echo $_SESSION['filename'] ;
