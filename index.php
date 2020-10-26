@@ -554,7 +554,7 @@
         <p>
         <?
         if(!isset($_SESSION['filename'])) {
-            echo $_SESSION['filename']
+            echo $_SESSION['filename'];
             }
             ?>
 </p>
