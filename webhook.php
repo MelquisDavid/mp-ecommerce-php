@@ -1,11 +1,8 @@
 <?php
 
-$fp = fopen("/app/webhook.txt",'wb');
+$fp = fopen("/app/webhook.txt",'ab');
 if (false === $fp) {
     throw new RuntimeException('Unable to open log file for writing');
-}
-else {
-    throw new RuntimeException('open log file for writing');
 }
 fwrite($fp,"Hola");
 fclose($fp);
