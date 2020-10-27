@@ -1,7 +1,7 @@
 <?php
 // SDK de Mercado Pago
 require_once 'vendor/autoload.php';
-
+error_reporting(-1);
 session_start();
 
 MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
