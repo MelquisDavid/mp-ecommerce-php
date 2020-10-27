@@ -8,6 +8,7 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Content-Type: application/json');
     $request = file_get_contents('php://input');
+    fopen('/var/www/html/pruba.txt');
     $req_dump = print_r( $request, true );
     $fp = file_put_contents( '/var/www/html/webhook.txt', $req_dump );
     $_SESSION['filename'] = $req_dump;
