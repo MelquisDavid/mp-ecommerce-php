@@ -2,6 +2,7 @@
 // SDK de Mercado Pago
 require_once 'vendor/autoload.php';
 error_reporting(-1);
+ini_set('display_errors', '1');
 session_start();
 
 
