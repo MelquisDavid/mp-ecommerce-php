@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Content-Type: application/json');
     $request = file_get_contents('php://input');
     $req_dump = print_r( $request, true );
-    $fp = file_put_contents( '/app/request.log', $req_dump );
+    $fp = file_put_contents( 'request.log', $req_dump );
     $_SESSION['filename'] = $req_dump;
     http_response_code(200);  // The request is using the POST method
 }
