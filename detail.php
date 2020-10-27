@@ -1,8 +1,7 @@
 <?php
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
-var_dump("Hola");
-die();
+
 session_start();
 MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
@@ -14,7 +13,8 @@ MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
-
+var_dump("Hola");
+die();
 //Crea el pagador
 $payer = new MercadoPago\Payer();
 $payer->name = "Lalo";
