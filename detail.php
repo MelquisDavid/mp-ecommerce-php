@@ -56,14 +56,14 @@ $preference->payment_methods = array(
   );
 $preference->items = array($item);
 $preference->back_urls = array(
-    "success" => "https://melquisd-mp-commerce-php.herokuapp.com/success.php",
-    "failure" => "https://melquisd-mp-commerce-php.herokuapp.com/failure.php",
-    "pending" => "https://melquisd-mp-commerce-php.herokuapp.com/pending.php"
+    "success" => "https://".$_SERVER['HTTP_HOST']."/success.php",
+    "failure" => "https://".$_SERVER['HTTP_HOST']."/failure.php",
+    "pending" => "https://".$_SERVER['HTTP_HOST']."/pending.php"
 );
 $preference->auto_return = "approved";
 $preference->external_reference = "melquisferrer@gmail.com";
 $preference->payer = $payer;
-$preference->notification_url = "https://melquisd-mp-commerce-php.herokuapp.com/webhook.php";
+$preference->notification_url = "https://".$_SERVER['HTTP_HOST']."/webhook.php";
 $preference->save();
 ?>
 
