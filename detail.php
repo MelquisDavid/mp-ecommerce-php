@@ -63,7 +63,7 @@ $preference->back_urls = array(
 $preference->auto_return = "approved";
 $preference->external_reference = "melquisferrer@gmail.com";
 $preference->payer = $payer;
-$preference->notification_url = "https://".$_SERVER['HTTP_HOST']."/webhook.php";
+$preference->notification_url = "https://".$_SERVER['HTTP_HOST']."/webhook.php?source_news=webhooks";
 $preference->save();
 ?>
 
